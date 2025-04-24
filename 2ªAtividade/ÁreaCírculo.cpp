@@ -24,3 +24,5 @@ int main() {
     std::cout << std::fixed << std::setprecision(5) << a1 << std::endl;
     return 0;
 }
+
+//FIM
