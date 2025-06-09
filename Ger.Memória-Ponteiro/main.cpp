@@ -1,8 +1,8 @@
 #include <iostream>
 #include <chrono>
 
-const int INITIAL_CAPACITY = 100;
-const int INCREASE_CAPACITY = 100;
+const int INITIAL_CAPACITY = 8;
+const int INCREASE_CAPACITY = 10000;
 
 // Função para aumentar a capacidade do vetor
 int* increase_capacity(int* data, int& capacity, int& size) {
