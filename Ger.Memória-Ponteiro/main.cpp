@@ -1,7 +1,7 @@
 #include <iostream>
 #include <chrono>
-
 const int INITIAL_CAPACITY = 100, INCREASE_CAPACITY = 100;
+
 int∗ increase_capacity(int∗ data, int& capacity, int& size) {
     int∗ new_array = new int[capacity + INCREASE_CAPACITY];
     for (int i = 0; i < size; ++i)
@@ -11,14 +11,12 @@ int∗ increase_capacity(int∗ data, int& capacity, int& size) {
     capacity = capacity + INCREASE_CAPACITY;
     return new_array;
 }
-
 int∗ push_back(int∗ data, int& capacity, int& size, int value) {
     if (size == capacity)
         data = increase_capacity(data, capacity, size);
     data[size++] = value;
     return data;
 }
-
 int main() {
     int∗ data;
     int size = 0, capacity = INITIAL_CAPACITY, x;
